@@ -1,0 +1,80 @@
+﻿<html><!-- Opening of the HTML document -->
+
+	<!-- Information about the webpage: title, stylesheet, and meta information -->
+	<head>
+		<title>Dmytrography</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<link rel="shortcut icon" href="Image/gallery.png" type="image/png">
+		<meta charset="UTF-8">
+		<meta name="description" content="Photo studio">
+		<meta name="keywords" content="photography, photo studio, 
+				professional photography, corporate photography, family photography, 
+				portrait photography, event photography, fashion photography">
+		<meta name="author" content="Dmytro Brodar">
+	</head>
+
+	<!-- Content of the webpage -->
+	<body>
+
+		<!-- Container div that holds the entire webpage -->
+		<div id="container">
+
+			<!-- Header section of the webpage -->
+			<div id="header" title="sitename">
+				<a href="index.html"><img class="logo" src="Image/logo.png" alt="Dmytrography, photo studio"></a>
+			</div>
+			
+			<!-- Main navigation menu of the webpage -->
+			<ul id="mainnav">
+				<li class="liMainnav"><a href="index.html">Home</a></li>
+				<li class="liMainnav"><a href="booking.html">Booking</a></li>
+				<li class="liMainnav"><a href="services.html">Services</a></li>
+				<li class="liMainnav"><a href="galleries.html">Galleries</a></li>
+				<li class="liMainnav"><a href="about.html">About</a></li>
+				<li class="liMainnav"><a href="contact.html">Contact</a></li>
+			</ul>
+			
+			<!-- Main content section of the webpage -->
+			<div id = "content">	
+					<h1>Contact Us</h1>				
+					
+					<h2>Providing detailed information will enable us to speedily respond to your enquiry.</h2>
+					
+					<!-- Form for contacting with action, encoding type and method -->
+					<form class="formBooking" action="mailto:dmytro.brodar@morrisonsislandcampus.com" enctype="text/plain" method=post>
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="name" required>
+						
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" required>
+						<label for="contactComment"><b>Please leave Comment or Message:</b></label>
+						<textarea id="contactComment" name="contactComment" rows="4" cols="50"></textarea>
+						
+						<input type="Submit" id="contactSubmit" value="Click">
+						<input type="Reset" id="contactSubmit" value="Reset">
+					</form>
+					<hr>
+
+					<!-- Displaying contact information -->
+					<div class="contactInfoList"><!--Information with contact details-->
+						<h2>Contact Info</h2>
+						<ul>
+							<li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.909114569771!2d-8.47567068421557!3d51.89912267970137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x484490104e61b597%3A0x89dc7994ef8d0be9!2sPlatform%203!5e0!3m2!1sru!2sie!4v1681686872723!5m2!1sru!2sie"
+								width="650" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"></iframe>
+								<b>Address: Platform3, 19 Academy street, Cork, Ireland, T12 V9DK</b></li>
+							<li><b>Phone: +353 (0)66 11 11 111</b></li>
+							<li><b>Email: info@dmytrography.ie</b></li>
+						</ul>
+					</div>
+			</div>
+
+			<!-- Footer section -->
+			<div id="footer">
+				Copyright Dmytrography &copy;
+			</div>
+		</div>
+	<!-- End content of the webpage -->
+	</body>
+<!-- End of HTML code -->	
+</html>

@@ -1,0 +1,102 @@
+﻿<html><!-- Opening of the HTML document -->
+
+	<!-- Information about the webpage: title, stylesheet, and meta information -->
+	<head>
+		<title>Dmytrography</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<link rel="shortcut icon" href="Image/gallery.png" type="image/png">
+		<meta charset="UTF-8">
+		<meta name="description" content="Photo studio">
+		<meta name="keywords" content="photography, photo studio, 
+				professional photography, corporate photography, family photography, 
+				portrait photography, event photography, fashion photography">
+		<meta name="author" content="Dmytro Brodar">
+	</head>
+
+	<!-- Content of the webpage -->
+	<body>
+		
+		<!-- Container div that holds the entire webpage -->
+		<div id="container">
+			
+			<!-- Header section of the webpage -->
+			<div id="header" title="sitename">
+				<a href="index.html"><img class="logo" src="Image/logo.png" alt="Dmytrography, photo studio"></a>
+			</div>
+			
+			<!-- Main navigation menu of the webpage -->
+			<ul id="mainnav">
+				<li class="liMainnav"><a href="index.html">Home</a></li>
+				<li class="liMainnav"><a href="booking.html">Booking</a></li>
+				<li class="liMainnav"><a href="services.html">Services</a></li>
+				<li class="liMainnav"><a href="galleries.html">Galleries</a></li>
+				<li class="liMainnav"><a href="about.html">About</a></li>
+				<li class="liMainnav"><a href="contact.html">Contact</a></li>
+			</ul>
+			
+			<!-- Main content section of the webpage -->
+			<div id="content">
+				<h1>Book your visit!</h1>
+				
+				<!-- Section overview of the webpage -->
+				<h2>Overview:</h3>
+				<p>Welcome to our online booking page! <br> Here, you can easily book one of our professional photography services with just a
+				few clicks. Our team of experienced photographers is dedicated to capturing your special moments with precision and
+				creativity.</p>
+				<hr>
+
+				<!-- Available equipment section -->
+				<h3>Available Equipment:</h3>
+				<p>We use top-notch equipment for high-quality photos, including state-of-the-art cameras, industry-standard lighting, and
+				various backgrounds and props to make your shoot unique.
+				Rest assured that we have everything you need to make your vision a reality.</p>
+				
+				<!-- Images section -->
+				<div class="mainImage">
+					<img src="Image/booking1.jpg" class="leftimg" alt="">
+					<img src="Image/booking4.jpg" class="leftimg" alt="">
+				</div>
+				<hr>
+
+				<!-- Booking form section -->
+				<form class="formBooking" action="mailto:dmytro.brodar@morrisonsislandcampus.com" enctype="text/plain" method=post>
+					<h3>Request a Quote:</h3>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" required>
+
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required>
+
+					<label for="phone">Phone:</label>
+					<input type="tel" id="phone" name="phone" required>
+
+					<label for="date">Date:</label>
+					<input type="date" id="date" name="date" required>
+
+					<label for="time">Time:</label>
+					<input type="time" id="time" name="time" required>
+
+					<label for="service">Service:</label>
+					<select name="service" id="service">
+						<option value="portrait">Portrait</option>
+						<option value="wedding">Wedding</option>
+						<option value="event">Event</option>
+					</select>
+
+					<label for="message">Message:</label>
+					<textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+					<input type="submit" value="Submit">
+				</form>
+
+			</div>
+
+			<!-- Footer section -->
+			<div id="footer">
+				Copyright Dmytrography &copy;
+			</div>
+		</div>
+	<!-- End content of the webpage -->
+	</body>
+<!-- End of HTML code -->	
+</html>

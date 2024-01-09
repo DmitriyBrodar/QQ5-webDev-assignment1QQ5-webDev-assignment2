@@ -1,0 +1,310 @@
+/* Main styles and styles home page
+Author : Dmytro Brodar
+ Class : CD
+*/
+body {
+	background-image: url(Image/background1.jpg);
+	background-attachment: fixed;  
+	font-size: 80%;
+	font-family: Century Gothic, sans-serif;
+	letter-spacing: 0.15em;	
+}
+/* Styles for the container */
+#container {
+	max-width: 740px;
+	min-width: 620px;
+	margin: 5px auto;
+	padding: 20px;
+	border: 2px solid #000;
+	border-radius: 10px;
+	background-color: #e0feffc9;
+}
+
+/* Styles for the header */
+#header {
+	text-align: left;
+}
+
+.logo {
+	width: 450px;
+	padding: 0 0 15 30px;
+}
+
+#header a {
+	text-decoration: none;
+	color: black;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: bold;
+	color: #333333;
+	margin: 15px auto;
+	text-align: center;
+}
+
+h2 {
+	font-size: 20px;
+	color: #fc2727;
+	margin: 0 0 15px 0;
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+}
+ul {
+	padding: 0 0 0 15px;
+}
+
+/* Styles for the main navigation */
+#mainnav {
+	width: 650px;
+	padding: 15px;
+	margin: 0 auto;
+	border-top: 2px solid #000000;
+	border-bottom: 1px solid #000000;
+	text-align: center;
+}
+.liMainnav {
+	display: inline;
+	margin: 0 auto;
+	font-weight: bold;
+	font-size: 17px;
+}
+#mainnav a {
+	color: #000000;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 6px 10px 5px 10px;
+}
+#mainnav a:hover {
+	color: #ffffff;
+	background-color: #000000;
+	border-radius: 10px;
+}
+#mainnav a:focus {
+	color: #ff0000;
+	background-color: #000000;
+}
+
+/* Styles for the footer */
+#footer {
+	padding: 15px;
+	margin: 0 auto;
+	border-bottom: 2px solid #000000;
+	border-top: 1px solid #000000;
+	text-align: center;
+	width: 650px;
+}
+
+/* Styles for the content section */
+#content {
+	width: 650px;
+	margin: 0 auto;
+}
+.mainImage {
+	width: 100%;
+	overflow: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 15px;
+}
+.leftimg {
+	margin: 0px 2px 0 0;
+	border: 1px solid black;
+	width: auto;
+	height: 255px;
+}
+.videoTitle {
+	margin-bottom: 15px;
+}
+
+/* Booking styles */
+.formBooking {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	border-radius: 10px;
+}
+.formBooking label {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.formBooking input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+	margin-bottom: 10px;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+}
+.formBooking input[type="submit"] {
+	background-color: #ff2c2c;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+.formBooking input[type="submit"]:hover {
+	background-color: #f78787;
+	color: #000;
+	border: 1px solid #000;
+}
+
+/* Styles for the services */
+.services {
+	display:inline-block;
+}
+.photoRight {
+	float: right;
+	margin: 0px 0px 10px 10px;
+	border: 1px solid black;
+	width: auto;
+	height: 180px;
+}
+.photoLeft {
+	float: left;
+	margin: 0px 10px 10px 0;
+	border: 1px solid black;
+	width: auto;
+	height: 180px;
+}
+.services h4 {
+	margin: 0 0 10px 0;
+}
+
+/* Styles for the tables in page services */
+.classTable {
+	margin: 20px auto;
+	font-size: 80%;
+	border-collapse: collapse;
+	width: 500px;
+}
+
+.classTable th,
+td {
+	border: 1px solid #000;
+}
+
+.classTable th {
+	padding: 6px;
+	background: #fd1c1cd4;
+	font-size: 130%;
+}
+.classTable td {
+	padding: 6px;
+	background: #ffd0d0d9;
+	font-size: 120%;
+}
+
+/* Styles for the galleries */
+.galleriesHeader {
+	text-align: center;
+}
+
+.galleriesHeader p {
+	font-size: 16px;
+	color: #272727;
+	text-align:left;
+}
+.cardContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.card {
+	margin-bottom: 20px;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+
+}
+.card .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	opacity: 0;
+	color: #fff;
+}
+.card:hover .overlay {
+	opacity: 1;
+}
+.card h3 {
+	font-size: 24px;
+}
+.card a {
+	background-color: #fa3c3c;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 20px;
+	margin-bottom: 10px;
+	text-decoration: none;
+}
+.card a:hover {
+	background-color: #ff8b8b;
+	color: #000;
+}
+
+/* Style for the about */
+.aboutStory img {
+	float: left;
+	margin: 0px 10px 10px 0px;
+	border: 1px solid black;
+	width: 450px;
+	height: auto;
+}
+.aboutDetails img {
+	float: right;
+	margin: 0px 0px 10px 10px;
+	border: 1px solid black;
+	width: 450px;
+	height: auto;
+} 
+
+/* Styles for the contact page */
+#contactSubmit{
+	border-radius: 5px;
+	border: 1px solid black;
+	margin: 10px 10px 0 0;
+	background: #ff2c2c;
+	padding: 8px 10px;
+	font-size: 15px;
+	color: #fff;
+}
+#contactSubmit:hover {
+	background: #f78787;
+	color: #000;
+}
+#contactSubmit:focus {
+	outline: none;
+	box-shadow: 0 0 0 4px #f78787;
+	color: #000;
+}
+.contactInfoList {
+	text-align: center;
+}
+.contactInfoList ul {
+	padding: 0 0 15px 0;
+	margin: 0;
+}
+.contactInfoList li {
+	list-style: none;
+	padding-bottom: 5px;
+}
+
+
